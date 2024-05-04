@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+    branches: [ m2n ]
+
+jobs:
+  test:
+    name: PHP ${{ matrix.php }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['8.0', '8.1', '8.2']
+        phpunit: ['9']
+        include:
+        - php: '7.4'
+          phpunit: '8'
+          coverage: xdebug
+          flags: '--coverage-clover clover.xml'
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use PHP ${{ matrix.php }}
+      uses: shivammathur/setup-php@2.30.4
+      with:
+        php-version: ${{ matrix.php }}
+        extensions: mbstring, dom, simplexml, intl
+        tools: phpunit:${{ matrix.phpunit }}
+        coverage: ${{ matrix.coverage }}
+
+    # - name: Validate composer.json and composer.lock
+    #   run: composer validate
+
+    # - name: Cache Composer packages
+    #   id: composer-cache
+    #   uses: actions/cache@v2
+    #   with:
+    #     path: vendor
+    #     key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+    #     restore-keys: |
+    #       ${{ runner.os }}-php-
+
+    # - name: Install dependencies
+    #   if: steps.composer-cache.outputs.cache-hit != 'true'
+    #   run: composer install --prefer-dist --no-progress --no-suggest
+    #   env:
+    #     APP_ENV: testing
+
+    # - name: Lint
+    #   run: composer run-script lint
+
+    - name: Prepare the application
+      run: |
+        git clone https://github.com/Diamochang/i7h-PHP.git
+
+    - name: Test
+      run: phpunit --configuration phpunit.xml.dist ${{ matrix.flags }}
