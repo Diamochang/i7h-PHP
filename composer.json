@@ -1,5 +1,5 @@
 {
-    "name": "Diamochang/i7h-PHP",
+    "name": "diamochang/i7h-php",
     "type": "library",
     "description": "Implement RimoChan's own i18nglish in PHP without worrying about XSS attacks.",
     "keywords": ["i18nglish","i18nglishize"],
