@@ -1,5 +1,5 @@
 # i7h-PHP
-![CI](https://github.com/Diamochang/i7h-PHP/workflows/CI/badge.svg) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/badges/quality-score.png?b=m2n)](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/?branch=m2n) ![PHP Version Support](https://img.shields.io/packagist/php-v/diamochang/i7h-php) [![Packagist](https://img.shields.io/packagist/diamochang/i7h-php.svg)](https://packagist.org/packages/diamochang/i7h-php)
+![CI](https://github.com/Diamochang/i7h-PHP/workflows/CI/badge.svg) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/badges/quality-score.png?b=m2n)](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/?branch=m2n) ![PHP Version Support](https://img.shields.io/packagist/php-v/diamochang/i7h-php) [![Packagist Stars](https://img.shields.io/packagist/stars/diamochang/i7h-php.svg)](https://packagist.org/packages/diamochang/i7h-php)
 
 这个项目可以在 PHP 中实现[莉沫酱](https://github.com/RimoChan)自创的 [i18nglish](https://github.com/RimoChan/i7h)，且不用担心 XSS 攻击。
 ## 使用效果

@@ -1,13 +1,13 @@
 # i7h-PHP
 [简体中文](README_zh-hans.md)
 
-![CI](https://github.com/Diamochang/i7h-PHP/workflows/CI/badge.svg) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/badges/quality-score.png?b=m2n)](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/?branch=m2n) ![PHP Version Support](https://img.shields.io/packagist/php-v/diamochang/i7h-php) [![Packagist](https://img.shields.io/packagist/diamochang/i7h-php.svg)](https://packagist.org/packages/diamochang/i7h-php)
+![CI](https://github.com/Diamochang/i7h-PHP/workflows/CI/badge.svg) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/badges/quality-score.png?b=m2n)](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/?branch=m2n) ![PHP Version Support](https://img.shields.io/packagist/php-v/diamochang/i7h-php) [![Packagist Stars](https://img.shields.io/packagist/stars/diamochang/i7h-php.svg)](https://packagist.org/packages/diamochang/i7h-php)
 
 This project can implement [i18nglish](https://github.com/RimoChan/i7h), which was created by [RimoChan](https://github.com/RimoChan), in PHP without worrying about XSS attacks.
 ## How it works
 The example text is taken from Richard M. Stallman's [*Free Software Song* lyrics](https://www.gnu.org/music/free-software-song.en.html).
 
-Before.
+Before: 
 ```
 When we have enough free software
 At our call, hackers, at our call,
@@ -15,7 +15,7 @@ We'll kick out those dirty licenses
 Ever more, hackers, ever more.
 ```
 
-After.
+After: 
 ```
 W2n we h2e e4h f2e s6e
 At o1r c2l, h5s, at o1r c2l,
