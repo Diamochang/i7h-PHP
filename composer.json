@@ -1,0 +1,23 @@
+{
+    "name": "Diamochang/i7h-PHP",
+    "type": "library",
+    "description": "Implement RimoChan's own i18nglish in PHP without worrying about XSS attacks.",
+    "keywords": ["i18nglish","i18nglishize"],
+    "homepage": "https://github.com/Diamochang/i7h-PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike Wang (Diamochang)",
+            "email": "diamochang@yeah.net",
+            "homepage": "http://imdchs.rf.gd",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "support": {
+        "issues": "https://github.com/Diamochang/i7h-PHP/issues",
+        "source": "https://gitee.com/Diamochang/i7h-PHP"
+    }
+}
