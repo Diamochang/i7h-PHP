@@ -1,7 +1,7 @@
 # i7h-PHP
-[简体中文](README_zh-hans.md)
+[简体中文](README_zh-hans.md) | [繁體中文](README_zh-hant.md)
 
-![CI](https://github.com/Diamochang/i7h-PHP/workflows/CI/badge.svg) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/badges/quality-score.png?b=m2n)](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/?branch=m2n) ![PHP Version Support](https://img.shields.io/packagist/php-v/diamochang/i7h-php) [![Packagist Stars](https://img.shields.io/packagist/stars/diamochang/i7h-php.svg)](https://packagist.org/packages/diamochang/i7h-php)
+[![PHP CI](https://github.com/Diamochang/i7h-PHP/actions/workflows/php.yml/badge.svg?branch=m2n)](https://github.com/Diamochang/i7h-PHP/actions/workflows/php.yml) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/badges/quality-score.png?b=m2n)](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/?branch=m2n) ![PHP Version Support](https://img.shields.io/packagist/php-v/diamochang/i7h-php) [![Packagist Stars](https://img.shields.io/packagist/stars/diamochang/i7h-php.svg)](https://packagist.org/packages/diamochang/i7h-php)
 
 This project can implement [i18nglish](https://github.com/RimoChan/i7h), which was created by [RimoChan](https://github.com/RimoChan), in PHP without worrying about XSS attacks.
 ## How it works
@@ -25,7 +25,7 @@ E2r m2e, h5s, e2r m2e.
 
 (Note: I added the apostrophe in "We'll" myself, it was originally lost in the escaping process.)
 ## How to use it
-1. `git clone` the entire repository. If it's slow, try changing `hub` to `ee` in the Git URL to use the code cloud mirror. You can also use Composer: `composer require diamochang/i7h-php`.
+1. `git clone` the entire repository. If it's slow, try changing `hub` to `ee` in the Git URL to use the Gitee mirror. You can also use Composer: `composer require diamochang/i7h-php`.
 2. Move `i7h.php` to your project. If you installed it with Composer, this step can be skipped.
 3. Add the dependency to the code you want to use:
 ```php

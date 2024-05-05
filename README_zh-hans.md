@@ -1,9 +1,9 @@
 # i7h-PHP
-![CI](https://github.com/Diamochang/i7h-PHP/workflows/CI/badge.svg) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/badges/quality-score.png?b=m2n)](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/?branch=m2n) ![PHP Version Support](https://img.shields.io/packagist/php-v/diamochang/i7h-php) [![Packagist Stars](https://img.shields.io/packagist/stars/diamochang/i7h-php.svg)](https://packagist.org/packages/diamochang/i7h-php)
+[![PHP CI](https://github.com/Diamochang/i7h-PHP/actions/workflows/php.yml/badge.svg?branch=m2n)](https://github.com/Diamochang/i7h-PHP/actions/workflows/php.yml) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/badges/quality-score.png?b=m2n)](https://scrutinizer-ci.com/g/Diamochang/i7h-PHP/?branch=m2n) ![PHP Version Support](https://img.shields.io/packagist/php-v/diamochang/i7h-php) [![Packagist Stars](https://img.shields.io/packagist/stars/diamochang/i7h-php.svg)](https://packagist.org/packages/diamochang/i7h-php)
 
 这个项目可以在 PHP 中实现[莉沫酱](https://github.com/RimoChan)自创的 [i18nglish](https://github.com/RimoChan/i7h)，且不用担心 XSS 攻击。
 ## 使用效果
-示例文本取自 Richard M. Stallman 的[自由软件之歌英文歌词](https://www.gnu.org/music/free-software-song.en.html)。
+示例文本取自 Richard M. Stallman 的[《自由软件之歌》英文歌词](https://www.gnu.org/music/free-software-song.en.html)。
 
 Before:
 ```

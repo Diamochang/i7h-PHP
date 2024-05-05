@@ -14,6 +14,7 @@
 * Implement RimoChan's own i18nglish in PHP without worrying about XSS attacks.
 * 
 * @package i7h-PHP
+* @version 0.5.0
 * @author Mike Wang (Diamochang)
 * @license MIT
 */
