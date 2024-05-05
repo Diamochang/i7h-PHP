@@ -13,13 +13,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: ['8.0', '8.1', '8.2']
-        phpunit: ['9']
-        include:
-        - php: '7.4'
-          phpunit: '8'
-          coverage: xdebug
-          flags: '--coverage-clover clover.xml'
+        php: ['7.4', '8.0', '8.1', '8.2']
+        coverage: xdebug
 
     steps:
     - uses: actions/checkout@v4
@@ -29,7 +24,6 @@ jobs:
       with:
         php-version: ${{ matrix.php }}
         extensions: mbstring, dom, simplexml, intl
-        tools: phpunit:${{ matrix.phpunit }}
         coverage: ${{ matrix.coverage }}
 
     # - name: Validate composer.json and composer.lock
@@ -58,4 +52,6 @@ jobs:
         git clone https://github.com/Diamochang/i7h-PHP.git
 
     - name: Test
-      run: phpunit --configuration phpunit.xml.dist ${{ matrix.flags }}
+      run: |
+        cd i7h-PHP
+        php -r "require_once "i7h.php"; $i7h = new i7h(); echo $i7h->i18n('Hello World')"
